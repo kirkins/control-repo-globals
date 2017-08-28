@@ -1,12 +1,12 @@
 require 'json'
 
-if !File.exist? '/home/pi/Pop_Machine/data/pops.json'
+if !File.exist? '/home/pi/pop_machine/data/pops.json'
   exit
 end
 
-system_json = JSON.parse(File.read('/home/pi/Pop_Machine/data/pops.json'))
+system_json = JSON.parse(File.read('/home/pi/pop_machine/data/pops.json'))
 
-Facter.add(:controller_api) do
+Facter.add(:pops) do
   setcode do
     system_json['pops']
   end
