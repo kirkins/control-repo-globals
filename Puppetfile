@@ -21,6 +21,6 @@ mod "custom_facts", local: true
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
-mode 'vcsrepo',
+mod 'vcsrepo',
   :git     => 'https://github.com/puppetlabs/puppetlabs-vcsrepo',
   :branch  => 'master'
